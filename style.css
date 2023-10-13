@@ -1,0 +1,225 @@
+/* --------- RESET CSS  --------- */
+
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+/* ------- END RESET CSS  ------- */
+
+/* --------- VARIABLES  --------- */
+html {
+  /* COLORS */
+  --shade-1: #0a0a0a;
+  --shade-2: #121212;
+  --shade-3: #3b3b3b;
+  --shade-4: #b3b3b3;
+  --shade-5: #ffffff;
+  --accent-1: #9b5cff;
+  --accent-2: #ffe074;
+  --accent-3: #5ee2ff;
+
+  /* GRADIENT */
+  --gradient-01: linear-gradient(
+    90deg,
+    #ffe074 0.85%,
+    #50cae4 52.93%,
+    #9b5cff 100.85%
+  );
+
+  /*  FONT-FAMILY */
+  --ff-body: Inter;
+  --ff-subtitle: DM Sans;
+
+  /* FONT-SIZE */
+  --fs-headings-01: 5.625rem;
+  --fs-headings-02: 3rem;
+  --fs-headings-03: 2rem;
+  --fs-subtitle: 2rem;
+  --fs-paragraph-lg: 1.125rem;
+  --fs-paragraph-md: 1rem;
+  --fs-paragraph-sm: 0.875rem;
+  --fs-label-md: 1rem;
+
+  /* FONT-WEIGHT */
+  --fw-bold: 700;
+  --fw-semi-bold: 600;
+  --fw-normal: 400;
+
+  /* LINE HEIGHT */
+  --lh-headings-01: 120%;
+  --lh-headings-02: 150%;
+  --lh-headings-03: 130%;
+  --lh-subtitle: 150%;
+  --lh-paragraph-lg: 150%;
+  --lh-paragraph-md: 150%;
+  --lh-paragraph-sm: 1.5rem;
+  --lh-label-md: 1.5rem;
+}
+/* ------- END VARIABLES  ------- */
+
+/* --------- GLOBALS  --------- */
+body {
+  font-family: var(--ff-body);
+  font-size: 1rem;
+  background-color: var(--shade-1);
+  color: var(--shade-5);
+}
+
+h1 {
+  font-size: var(--fs-headings-01);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-headings-01);
+  letter-spacing: -0.05625rem;
+}
+
+h2 {
+  font-size: var(--fs-headings-02);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-headings-02);
+}
+
+h3 {
+  font-size: var(--fs-headings-03);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-headings-03);
+}
+
+button {
+  font-weight: var(--fw-semi-bold);
+  width: 100px;
+  height: 48px;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--shade-1);
+  color: var(--shade-5);
+  border-radius: 8px;
+  border: none;
+}
+
+button:hover {
+  background-color: var(--shade-5);
+  color: var(--shade-1);
+}
+
+.subtitle {
+  font-family: var(--ff-subtitle), "Helvetica", "Arial", sans-serif;
+  font-size: var(--fs-subtitle);
+  line-height: var(--lh-subtitle);
+}
+
+.paragraph-lg {
+  font-size: var(--fs-paragraph-lg);
+  line-height: var(--lh-paragraph-lg);
+}
+
+.paragraph-md {
+  font-size: var(--fs-paragraph-md);
+  line-height: var(--lh-paragraph-md);
+}
+
+.paragraph-sm {
+  font-size: var(--fs-paragraph-sm);
+  line-height: var(--lh-paragraph-sm);
+}
+
+/* ------- END GLOBALS  ------- */
+
+/* --------- HEADER  --------- */
+.header {
+  height: 5rem;
+}
+
+.header .links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.header .links button {
+  background-color: var(--shade-2);
+}
+
+.header .links li:last-child button {
+  background: var(
+    --gradient-01,
+    linear-gradient(90deg, #ffe074 0.85%, #50cae4 52.93%, #9b5cff 100.85%)
+  );
+  background-clip: text;
+}
+
+/* ------- END HEADER  ------- */
+
+/* --------- INTRO  --------- */
+/* ------- END INTRO  ------- */
+
+/* --------- WORK  --------- */
+/* ------- END WORK  ------- */
+
+/* --------- ABOUT ME  --------- */
+/* ------- END ABOUT ME  ------- */
+
+/* --------- SKILLS  --------- */
+/* ------- END SKILLS  ------- */
+
+/* --------- CONTACT  --------- */
+/* ------- END CONTACT  ------- */
+
+/* --------- FOOTER  --------- */
+/* ------- END FOOTER  ------- */
